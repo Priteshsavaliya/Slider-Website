@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-part">
+                        <div class="hdr-logo">
+                            <img src="img/hdr-logo.svg" alt="logo">
+                        </div>
+
+                        <ul class="align-self-center text-align">
+
+                            <div class="text-right pe-2 mb-2">
+                                <button class="close-icon" id="overlay1" onclick="off()">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff"
+                                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                        </svg>
+                                    </a>
+                                </button>
+                            </div>
+                            <li class="border-top-0 mt-3">
+                                <a href="#">Call Me</a>
+                            </li>
+                            <li>
+                                <a href="#home" class="active">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#features">Services</a>
+                            </li>
+
+                            <li>
+                                <a href="#Screenshot">My guides</a>
+                            </li>
+
+                            <li>
+                                <a href="#Coaching schedule">Testimonial</a>
+                            </li>
+
+                            <li>
+                                <a href="#Testimonials">Pricing</a>
+                            </li>
+
+                            <li>
+                                <a href="#Contact me">Faq</a>
+                            </li>
+
+                            <div class="hdr-icon">
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-skype" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                        <button class="align-self-center" type="submit" onclick="on()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#7ae7c7"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                        <div class="top-bar-right">
+                            <div class="top-bar-right-wrapper">
+                                <a href="#" class="top-bar-right-btn">Call me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" onclick="off()">
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function () {
+            $("header button").click(function () {
+                $("header ul").toggleClass("show");
+            });
+        });
+    </script>
+    <div class="sidebar">
+        <div class="">
+            <div class="logo text-align">
+                <a href="#">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="menu-wrepper">
+                <ul class="text-align">
+                    <li>
+                        <a href="#" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">My guides</a>
+                    </li>
+                    <li>
+                        <a href="#">Coaching schedule</a>
+                    </li>
+                    <li>
+                        <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top-bar-right mt-2">
+                <div class="top-bar-right-wrapper">
+                    <a href="#" class="top-bar-right-btn">Call me</a>
+                </div>
+            </div>
+
+            <div class="benner-wrapper">
+                <p>
+                    Envato</br>
+                    Level 13, 2 Elizabeth,</br>
+                    Victoria 3000,</br>
+                    Australia
+                </p>
+            </div>
+
+            <div class="social-icon">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                class="bi bi-skype" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="main-benner position-relative inner-space">
+            <div class="container">
+                <div class="row align-items-center cust-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="main-benner-txt">
+                            <div class="benner-top-txt">
+                                <span>MARK STEVENS</span>
+                            </div>
+                            <h1>YOUR PERSONAL <bdi>BUSSINESS COACH</bdi></h1>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <button class="comn-btn align-items-center row" type="submit">See My Lesson <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </button>
+        
+                            <span class="row justify-content-between align-items-center">
+                                <img src="img/bestoffer.svg"/>
+                                <img src="img/dot.svg" class="dot-img">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 text-align">
+                        <div class="position-relative">
+                            <div>
+                                <img src="img/men.webp" class="man-img">
+                            </div>
+                            <div>
+                                <img src="img/main-circle.svg" class="animation"/>
+                                <img src="img/circle.webp" class="animation1">
+                                <img src="img/circle2.webp" class="animation2">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        
+        <section class="service inner-space">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1 col-md-1">
+                        <img src="img/magnifier.svg">
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <span class="service-txt">ALWAYS WORK HARD NEVER GIVE UP AND FIGHT UNTIL THE END</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                        <img src="img/man-circle.webp" class="service-man">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space aboutbg">
+            <div class="container">
+                <div class="row align-items-center main-about justify-content-between">
+                    <div class="col-lg-6 col-md-5">
+                        <img src="img/proman.webp" class="about">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-5">
+                        <div class="about-main-txt">
+                            <span class="about-txt">
+                                MARK </br> STEVENS
+                            </span>
+                            <h4>
+                                Cursus habitasse vitae pharetra, praesent velit. Neque sagittis quis aliquet sed
+                                faucibus convallis morbi metus. Amet ullamcorper ac&nbsp; fames sed blandit dolor lacus
+                                turpis lectus quam.
+                            </h4>
+                            <p>
+                                Ornare lacus gravida congue in pretium ac neque. Orci et vulputate urna elementum
+                                porttitor nisi. Cras nunc morbi et quis molestie senectus senectus massa aliquam. Diam
+                                tincidunt non in aliquam tellus risus id fringilla. Vitae adipiscing velit.
+                            </p>
+                            <img src="img/sign.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="icon">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#7AE7C7"
+                                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space ">
+            <div class="container">
+                <div class="row pad-bg align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="success">
+                            <span>100 WAYS TO SUCCEED</span>
+                            <p>
+                                Enim sit turpis leo tincidunt placerat nibh in aliquet diam. Cras odio in vestibulum,
+                                iaculis at eleifend tristique. Bibendum interdum est in id eget.
+                            </p>
+                        </div>
+                        <label class="comn-lbl text-align">Leave your e-mail address</label>
+                        <form class="custom-pad">
+                            <div>
+                                <input type="text" class="form-control" placeholder="Email *">
+                            </div>
+                            <button class="comn-send-btn mt-2" type="submit">send</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-7 col-md-6 text-right">
+                        <img src="img/book.webp">
+                    </div>
+                </div>
+                <div class="row comn-txt">
+                    <div class="col-8">
+                        <div class="comn-txt">
+                            <span>
+                                EGET SIT IACULIS VULPUTATE MATTIS VULPUTATE. </br>
+                                VEL FRINGILLA
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space carbg pad-top pt-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-3">
+                        <div class="car-main-txt">
+                            <span class="rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#7AE7C7"
+                                    class="bi bi-record-circle" viewBox="0 0 20 20">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                </svg>
+                            </span>
+                            <span class="round-txt">01</span>
+                        </div>
+                        <div class="car-btm-txt">
+                            <p>
+                                Vestibulum ante ipsum primis in faucibus orci luctus et
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-3">
+                        <div class="car-main-txt">
+                            <span class="rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#7AE7C7"
+                                    class="bi bi-record-circle" viewBox="0 0 20 20">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                </svg>
+                            </span>
+                            <span class="round-txt">02</span>
+                        </div>
+                        <div class="car-btm-txt">
+                            <p>
+                                Sollicitudin lacus scelerisque primis aenean odio
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-3">
+                        <div class="car-main-txt">
+                            <span class="rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#7AE7C7"
+                                    class="bi bi-record-circle" viewBox="0 0 20 20">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                </svg>
+                            </span>
+                            <span class="round-txt">03</span>
+                        </div>
+                        <div class="car-btm-txt">
+                            <p>
+                                Sodales euismod primis tristique massa orci quisque
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-3">
+                        <div class="car-main-txt">
+                            <span class="rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#7AE7C7"
+                                    class="bi bi-record-circle" viewBox="0 0 20 20">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                </svg>
+                            </span>
+                            <span class="round-txt">04</span>
+                        </div>
+                        <div class="car-btm-txt">
+                            <p>
+                                Auctor lacus vestibulum tempus pharetra amet nullam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space aboutbg pad-custom">
+            <div class="container">
+                <div class="row bg-light-green">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="img/signman.webp" class="signman" />
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="experince-txt">
+                            <span>EXPERIENCE</span>
+                            <h5>
+                                Amet aliquet commodo, integer dui aliquet malesuada pulvinar malesuada.
+                            </h5>
+                            <img src="img/coach.svg" alt="">
+                            <p>
+                                Ornare lacus gravida congue in pretium ac neque. Orci et vulputate urna elementum
+                                porttitor nisi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="inner-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-rangebar">
+                            <div class="row rangebar">
+                                <div class="col-lg-4 col-md-6">
+                                    <h4>
+                                        Ornare lacus gravida congue in pretium ac neque.
+                                        <bdi>Orci et vulputate urna elementum porttitor nisi.</bdi>
+                                    </h4>
+                                </div>
+                                <div class="col-lg-8 col-md-6">
+                                    <div>
+                                        <ul>
+                                            <li class="progress-txt">
+                                                <div class="coach-txt">
+                                                    <bdi>COACHING</bdi>
+                                                    <span>80<em>%</em></span>
+                                                </div>
+
+                                                <div class="w3-light-grey w3-round-xlarge">
+                                                    <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">
+                                                        80%</div>
+                                                </div>
+                                            </li>
+                                            <li class="progress-txt">
+                                                <div class="coach-txt">
+                                                    <bdi>CONSULTING</bdi>
+                                                    <span>88<em>%</em></span>
+                                                </div>
+
+                                                <div class="w3-light-grey w3-round-xlarge">
+                                                    <div class="w3-container w3-blue w3-round-xlarge" style="width:88%">
+                                                        88%</div>
+                                                </div>
+                                            </li>
+                                            <li class="progress-txt">
+                                                <div class="coach-txt">
+                                                    <bdi>SELF DEVELOPMENT</bdi>
+                                                    <span>100<em>%</em></span>
+                                                </div>
+
+                                                <div class="w3-light-grey w3-round-xlarge">
+                                                    <div class="w3-container w3-blue w3-round-xlarge"
+                                                        style="width:100%">100%</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space pad-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="benner-top-txt text-align">
+                            <span>MARK STEVENS</span>
+                            <bdi class="d-block mb-3">POPULAR GUIDES</bdi>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xl-3 col-sm-6 col-12 mb-3">
+                                <div class="box-pad">
+                                    <div class="bussiness-main-part bussiness-1">
+                                        <div class="bussiness-top-txt">
+                                            How to Make Business Strategy
+                                        </div>
+                                        <div class="bussiness-middle-txt">
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>12 LESSONS</h6>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>6 WEEKS</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-icon">
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-bg-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="#0000004d" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 col-12 mb-3">
+                                <div class="box-pad">
+                                    <div class="bussiness-main-part bussiness-2">
+                                        <div class="bussiness-top-txt">
+                                            Time management at Business
+                                        </div>
+                                        <div class="bussiness-middle-txt">
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>12 LESSONS</h6>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>6 WEEKS</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-icon">
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-bg-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="#0000004d" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 col-12 mb-3">
+                                <div class="box-pad">
+                                    <div class="bussiness-main-part bussiness-3">
+                                        <div class="bussiness-top-txt">
+                                            How to Make Good Habits well
+                                        </div>
+                                        <div class="bussiness-middle-txt">
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>12 LESSONS</h6>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>6 WEEKS</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-icon">
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-bg-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="#0000004d" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 col-12 mb-3">
+                                <div class="box-pad">
+                                    <div class="bussiness-main-part bussiness-4">
+                                        <div class="bussiness-top-txt">
+                                            Life routines as part of Business
+                                        </div>
+                                        <div class="bussiness-middle-txt">
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>12 LESSONS</h6>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mfn-icon">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="#7AE7C7" class="bi bi-record-circle" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                                                        </path>
+                                                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="bussiness-txt">
+                                                    <h6>6 WEEKS</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-icon">
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-icon-bg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                            <span class="progress-bg-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="#0000004d" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space bg-circle-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="coach-main-txt text-align">
+                            <span>MARK STEVENS</span>
+                            <bdi class="d-block">UPCOMING SEMINARS</bdi>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row align-items-center border">
+                            <div class="col-lg-5 col-md-6">
+                                <div class="coaching-schedule">
+                                    <div class="coach-1">
+                                        <img src="img/seminar-1.webp">
+                                    </div>
+                                    <div class="coach-mid-txt text-align">
+                                        <span>10</span>
+                                        <p>March</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-6">
+                                <div class="coach-rgt-txt">
+                                    <div class="coach-main-txt">
+                                        How to start your adventure with professional teaching and dramatically increase
+                                        your superpowers
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000"
+                                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row align-items-center border">
+                            <div class="col-lg-5 col-md-6">
+                                <div class="coaching-schedule">
+                                    <div class="coach-1">
+                                        <img src="img/seminar-2.webp">
+                                    </div>
+                                    <div class="coach-mid-txt text-align">
+                                        <span>18</span>
+                                        <p>March</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-6">
+                                <div class="coach-rgt-txt">
+                                    <div class="coach-main-txt">
+                                        How to start your adventure with professional teaching and dramatically increase
+                                        your superpowers
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000"
+                                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row align-items-center inner-pad">
+                            <div class="col-lg-5 col-md-6">
+                                <div class="coaching-schedule">
+                                    <div class="coach-1">
+                                        <img src="img/seminar-3.webp">
+                                    </div>
+                                    <div class="coach-mid-txt text-align">
+                                        <span>14</span>
+                                        <p>April</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-6">
+                                <div class="coach-rgt-txt">
+                                    <div class="coach-main-txt">
+                                        How to start your adventure with professional teaching and dramatically increase
+                                        your superpowers
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000"
+                                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="serv-main-txt text-align">
+                            <bdi>TELLUS CONSECTETUR URNA ALIQUAM PORTTITOR</bdi>
+                            <p>
+                                Ornare lacus gravida congue in pretium ac neque. Orci et vulputate urna elementum
+                                porttitor nisi. Cras nunc morbi et quis molestie senectus senectus massa aliquam. Diam
+                                tincidunt non in aliquam tellus risus id fringilla. Vitae adipiscing velit.
+                            </p>
+                            <div class="text-align">
+                                <img src="img/sign.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inner-space">
+            <div class="row p-0">
+                <div class="col-lg-4 col-md-6 col-sm-6 overflow-hidden">
+                    <div class="gallery-img">
+                        <img src="img/gallery-1.webp">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 overflow-hidden">
+                    <div class="gallery-img">
+                        <img src="img/gallery-2.webp">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 overflow-hidden">
+                    <div class="gallery-img">
+                        <img src="img/gallery-3.webp">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 overflow-hidden">
+                    <div class="gallery-img">
+                        <img src="img/gallery-4.webp">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 overflow-hidden">
+                    <div class="gallery-img">
+                        <img src="img/gallery-5.webp">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 overflow-hidden">
+                    <div class="gallery-img">
+                        <img src="img/gallery-6.webp">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="inner-space dotbg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="testimoniel-main-txt text-align">
+                            <bdi class="d-block">OVER <bdo class="trust-txt">10,000</bdo> </br> PEOPLE TRUST ME</bdi>
+                        </div>
+                    </div>
+                </div>
+                <div class="autoplay inner-space pb-0">
+                    <div class="slider-for">
+                        <div class="d-flex justify-content-center">
+                            <div>
+                                <img src="img/testi-1.webp" alt="">
+                            </div>
+                            <div>
+                                <img src="img/testi-2.webp" alt="">
+                            </div>
+                            <div>
+                                <img src="img/testi-3.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div>
+                                <img src="img/testi-1.webp" alt="">
+                            </div>
+                            <div>
+                                <img src="img/testi-2.webp" alt="">
+                            </div>
+                            <div>
+                                <img src="img/testi-3.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div>
+                                <img src="img/testi-1.webp" alt="">
+                            </div>
+                            <div>
+                                <img src="img/testi-2.webp" alt="">
+                            </div>
+                            <div>
+                                <img src="img/testi-3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                            <div class="text-align">
+                                <p>
+                                    Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.
+                                </p>
+                                <div class="hr-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="author">
+                                    <h5>
+                                        Pamela Anders
+                                    </h5>
+                                    <span class="company">Genuine Draft</span>
+                                </div>
+                            </div>
+                            <div class="text-align">
+                                <p>
+                                    Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.
+                                </p>
+                                <div class="hr-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="author">
+                                    <h5>
+                                    Pamela Anders
+                                    </h5>
+                                    <span class="company">Genuine Draft</span>
+                                </div>
+                            </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        
+        <section class="inner-space aboutbg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-green">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-4 col-md-4">
+                                    <img src="img/slid-1.webp">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <div class="contact-main-txt">
+                                        <span class="contact-top-txt d-block">Don't wait, call us today!</span>
+                                        <bdi class="contact-middle-txt">+61 (0) 383 766 284</bdi>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                                    <div class="contact-form-txt">
+                                        <div class="contact-rgt-txt">
+                                            <p>or write an e-mail</p>
+                                            <a class="#">noreply@envato.com</a>
+                                        </div>
+                                        <div class="contact-icon">
+                                            <ul class="d-flex">
+                                                <li class="facebook-icon mb-3">
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <g>
+                                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                                <path
+                                                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="linkdin-icon mb-3">
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <g>
+                                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                                <path fill-rule="nonzero"
+                                                                    d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" />
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="twitter-icon mb-3">
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <g>
+                                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                                <path
+                                                                    d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" />
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="youtube-icon mb-3">
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                                            viewBox="0 0 512 512">
+                                                            <title>ionicons-v5_logos</title>
+                                                            <path
+                                                                d="M508.64,148.79c0-45-33.1-81.2-74-81.2C379.24,65,322.74,64,265,64H247c-57.6,0-114.2,1-169.6,3.6-40.8,0-73.9,36.4-73.9,81.4C1,184.59-.06,220.19,0,255.79q-.15,53.4,3.4,106.9c0,45,33.1,81.5,73.9,81.5,58.2,2.7,117.9,3.9,178.6,3.8q91.2.3,178.6-3.8c40.9,0,74-36.5,74-81.5,2.4-35.7,3.5-71.3,3.4-107Q512.24,202.29,508.64,148.79ZM207,353.89V157.39l145,98.2Z" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                    <form>
+                                        <div>
+                                            <input type="text" class="form-control" placeholder="Full Name *">
+                                        </div>
+                                        <div>
+                                            <input type="tel" class="form-control" placeholder="Phone *">
+                                        </div>
+                                        <div>
+                                            <input type="text" class="form-control" placeholder="Email address *">
+                                        </div>
+                                        <div>
+                                            <textarea type="text" name="your-message" class="form-control"
+                                                placeholder="Your message.." cols="40"
+                                                rows="1">Your message..</textarea>
+                                        </div>
+                                        <button class="comn-send-btn w-auto p-2 mt-2" type="submit">Send a
+                                            message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="ftr-main-part">
+            <div class="container">
+                <div class="row ftr-main-txt justify-content-between">
+                    <div class="col-lg-9 col-md-12">
+                        <div class="copy-right">
+                            © 2023 Betheme by Muffin group | All Rights Reserved | Powered by WordPress
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="ftr-icon">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-skype" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                            class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <button onclick="topFunction()" id="myBtn" title="Go to top">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav',
+                
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                focusOnSelect: true,
+                arrows: true,
+            });
+        });
+
+
+    </script>
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick-migrate.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+</body>
+
+</html>
